@@ -1,0 +1,27 @@
+export PATH=/usr/local/bin:$PATH
+export GEM_HOME=$HOME/.gem/
+MQTT_HOST=mqtt.piscada
+MYSQLSHELL=/usr/local/mysql/bin
+PATH=$HOME/bin:/usr/local/bin:$PATH:$MQTT_HOST
+CLASSPATH=$packages:$MYSQLSHELL:$MQTT_HOST
+alias xcode='open -a /Applications/Xcode.app'
+export MYSQLSHELL
+export PATH
+export CLASSPATH
+export MQTT_HOST
+alias setJdk7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
+alias setJdk8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+alias setJdk11="export JAVA_HOME=`/usr/libexec/java_home -v 1.18.9`; java -version"
+
+alias i="cd ~/iCloud/com~apple~CloudDocs/Documents"
+
+export HOMEBREW_GITHUB_API_TOKE=N"20ac5d4684ab441159b3864ecf57589bc8b8bb54"
+eval "$(rbenv init -)"
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/tolli/.sdkman"
+[[ -s "/Users/tolli/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/tolli/.sdkman/bin/sdkman-init.sh"
+
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
