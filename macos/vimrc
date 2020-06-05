@@ -1,30 +1,39 @@
-set runtimepath+=~/.vim_runtime
+set showcmd
+set showmode 
+set ignorecase
+set smartcase
+set mouse=a
 set nocompatible
 filetype off
+syntax on
+filetype plugin indent on
+set wrap
+set modelines=0
+set laststatus=2
 set number
-set rtp+=~/.vim/bundle/Vundle.vim
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
+set encoding=utf-8
+set hlsearch
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
 
+" Load .vimrc.plug
+if filereadable(expand("~/.vimrc.plug"))
+	source ~/.vimrc.plug
+endif
 
+" Autocompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
-source ~/.vim_runtime/vimrcs/basic.vim
-source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
-
-autocmd vimenter * NERDTree
+" NERDTree config
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-map <C-b> :NERDTreeToggle<CR>
 
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-ruby/vim-ruby'
+" TagBar
+nmap <F8> :TagbarToggle<CR>
 
-call vundle#end()
-filetype plugin indent on
-
-try
-source ~/.vim_runtime/my_configs.vim
-catch
-endtry

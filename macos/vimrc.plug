@@ -1,0 +1,17 @@
+call plug#begin('~/.vim/plugged')
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
+Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
+Plug 'rstacruz/vim-closer'
+Plug 'tpope/vim-endwise'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
+Plug 'davidhalter/jedi-vim'
+Plug 'majutsushi/tagbar'
+call plug#end()
