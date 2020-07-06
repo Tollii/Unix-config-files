@@ -1,4 +1,7 @@
 call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'davidhalter/jedi-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -12,6 +15,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
-Plug 'davidhalter/jedi-vim'
+Plug 'morhetz/gruvbox'
 Plug 'majutsushi/tagbar'
+Plug 'posva/vim-vue'
 call plug#end()
