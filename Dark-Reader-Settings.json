@@ -1,0 +1,96 @@
+{
+    "applyToListedOnly": true,
+    "automation": "",
+    "changeBrowserTheme": false,
+    "customThemes": [],
+    "enableForPDF": false,
+    "enabled": true,
+    "location": {
+        "latitude": null,
+        "longitude": null
+    },
+    "notifyOfNews": false,
+    "presets": [
+        {
+            "id": "preset-2b340c9c45eeed7a7ed3db44925b4537",
+            "name": "Theme 1",
+            "urls": [],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0.5,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto"
+            }
+        },
+        {
+            "id": "preset-1f1dbe40622f149b74d89cf50b58ab6d",
+            "name": "Theme 2",
+            "urls": [],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0.5,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#282828",
+                "darkSchemeTextColor": "#bdae93",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto"
+            }
+        }
+    ],
+    "previewNewDesign": true,
+    "siteList": [
+        "medium.com",
+        "en.wikipedia.org",
+        "www.wikipedia.org",
+        "github.com",
+        "www.vg.no",
+        "www.nrk.no",
+        "www.dagbladet.no"
+    ],
+    "siteListEnabled": [],
+    "syncSettings": true,
+    "syncSitesFixes": false,
+    "theme": {
+        "mode": 1,
+        "brightness": 100,
+        "contrast": 100,
+        "grayscale": 0,
+        "sepia": 15,
+        "useFont": false,
+        "fontFamily": "Segoe UI",
+        "textStroke": 0.5,
+        "engine": "dynamicTheme",
+        "stylesheet": "",
+        "darkSchemeBackgroundColor": "#282828",
+        "darkSchemeTextColor": "#bdae93",
+        "lightSchemeBackgroundColor": "#dcdad7",
+        "lightSchemeTextColor": "#181a1b",
+        "scrollbarColor": "#3c3836",
+        "selectionColor": "#504945"
+    },
+    "time": {
+        "activation": "18:00",
+        "deactivation": "9:00"
+    }
+}
