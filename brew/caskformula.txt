@@ -7,7 +7,6 @@ docker
 figma
 firefox
 github
-mvim
 iina
 intellij-idea
 iterm2
