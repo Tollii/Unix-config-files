@@ -23,6 +23,7 @@ freetds
 freetype
 gdbm
 gettext
+go
 git
 glib
 gmp
@@ -78,6 +79,7 @@ mad
 maven
 mongodb-community
 mongodb-community-shell
+mono
 mpfr
 mysql
 ncurses
