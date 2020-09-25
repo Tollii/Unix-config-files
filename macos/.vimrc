@@ -1,5 +1,6 @@
+let python_highlight_all=1
 set showcmd
-set showmode 
+set showmode
 set ignorecase
 set smartcase
 set mouse=a
@@ -26,9 +27,9 @@ let g:airline_theme='gruvbox'
 autocmd vimenter * colorscheme gruvbox
 
 " Tabs
-set tabstop=4
+set tabstop=2
 set softtabstop=0 noexpandtab
-set shiftwidth=4
+set shiftwidth=2
 set smarttab
 
 " Load .vimrc.plug
@@ -39,13 +40,6 @@ endif
 " Autocompletion
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-
-function! OpenCompletion()
-    if !pumvisible() && ((v:char >= 'a' && v:char <= 'z') || (v:char >= 'A' && v:char <= 'Z'))
-        call feedkeys("\<C-x>\<C-o>", "n")
-    endif
-endfunction
-autocmd InsertCharPre * call OpenCompletion()
 set completeopt+=menuone,noselect,noinsert
 
 " NERDTree config
@@ -62,3 +56,10 @@ nmap <C-\> :TagbarToggle<CR>
 " PDF
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> -
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
+
+" Pane remapping
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+

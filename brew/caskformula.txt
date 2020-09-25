@@ -24,3 +24,7 @@ ubersicht
 visual-studio-code
 webstorm
 wireshark
+osxfuse
+vagrant
+virtualbox
+weka

@@ -351,8 +351,10 @@ source ~/.vim/plugged/gruvbox/gruvbox_256palette.sh
 # Alias
 alias cls="clear"
 alias down="cd ~/Downloads"
+alias vim="mvim -v"
 alias ..="cd .."
-alias ....="cd ../.."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias prog="cd ~/Documents/program"
 alias look="sudo find . -name"
 alias search="sudo grep --color -rnw ./ -e "
@@ -364,9 +366,10 @@ alias prev="spotify prev"
 alias song="spotify status"
 alias speedtest="wget -O /dev/null cachefly.cachefly.net/100mb.test"
 # alias ls="ls -G"
-alias vimsheet="imgcat ~/Documents/div/vimsheet.png"
 alias l="ls -l"
-alias python=/usr/local/bin/python3
+alias python="python3"
+alias pip="pip3"
+alias ryabai="launchctl kickstart -k \"gui/${UID}/homebrew.mxcl.yabai\""
 
 bindkey '^F'  fzf-select-widget
 # }}}
@@ -386,3 +389,4 @@ bindkey '^[^M' autosuggest-execute
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="/usr/local/sbin:$PATH"
