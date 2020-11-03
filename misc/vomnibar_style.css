@@ -1,0 +1,57 @@
+div > .vimiumHintMarker {
+/* linkhint boxes */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF785),
+    color-stop(100%,#FFC542));
+    border: 1px solid #E3BE23;
+}
+
+div > .vimiumHintMarker span {
+/* linkhint text */
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div > .vimiumHintMarker > .matchingCharacter {
+}
+
+li {
+    background-color: 504945;
+}
+
+#vomnibar .vomnibarSearchArea {
+    background-color: #3c3836;
+    padding: 2px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+#vomnibar {
+    color: 504945;
+    background-color: 504945;
+    border-radius: 20px;
+}
+
+#vomnibar .vomnibarBottomHalf span {
+    color: a89984;
+}
+
+#vomnibar span .vomnibarMatch {
+    color: d79921;
+}
+
+#vomnibar .vomnibarTophalf .vomnibarTitle span {
+    color: d5c4a1;
+}
+
+#vomnibar input {
+    padding-left: 20px;
+    font-size: 14;
+    padding: 10px;
+    color: #ebdbb2;
+    background-color: #504945;
+    box-shadow: none;
+    border: 2px solid #504945;
+    border-radius: 20px;
+    padding-left: 20px;
+}
